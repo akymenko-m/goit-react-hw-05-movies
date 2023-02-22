@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import { Item, MovieTitle, Poster, StyledLink } from './MovieItem.styled';
 
@@ -20,4 +21,12 @@ export const MoviesItem = ({ movie }) => {
       </StyledLink>
     </Item>
   );
+};
+
+MoviesItem.propTypes = {
+  movie: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    poster_path: PropTypes.string,
+  }),
 };

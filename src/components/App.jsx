@@ -7,7 +7,7 @@ import Loader from 'components/Loader/Loader';
 import { Header, Main, Nav, StyledNavLink } from './App.styled';
 
 const LazyHome = lazy(() => import('pages/Home/Home'));
-const LazySearchMovies = lazy(() => import('pages/SearchMovies'));
+const LazySearchMovies = lazy(() => import('pages/SearchMovies/SearchMovies'));
 const LazyMovieDetails = lazy(() => import('pages/MovieDetails/MovieDetails'));
 
 export const App = () => {

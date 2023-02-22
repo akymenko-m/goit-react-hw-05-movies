@@ -11,7 +11,6 @@ import {
   MovieData,
   NavLinkStyled,
 } from './MovieDetails.styled';
-// import { StyledNavLink } from 'components/App.styled';
 
 const LazyCast = lazy(() => import('components/Cast/Cast'));
 const LazyReviews = lazy(() => import('components/Reviews/Reviews'));
