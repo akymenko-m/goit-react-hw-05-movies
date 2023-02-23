@@ -26,7 +26,7 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div>
       {isLoading ? (
         <Loader />
       ) : (
@@ -35,7 +35,7 @@ const Home = () => {
           <MoviesList movies={trandingMovies} />
         </>
       )}
-    </>
+    </div>
   );
 };
 

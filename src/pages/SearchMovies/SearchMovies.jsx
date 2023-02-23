@@ -38,7 +38,7 @@ const SearchMovies = () => {
   };
 
   return (
-    <>
+    <div>
       <SearchForm onSubmit={handleSubmit} defaultValue={searchQuery} />
       {isLoading && <Loader />}
       {/* {searchQuery && <p>Search results for the request "{searchQuery}"</p>} */}
@@ -48,7 +48,7 @@ const SearchMovies = () => {
       ) : (
         <p>There are no movies for your request</p>
       )}
-    </>
+    </div>
   );
 };
 
